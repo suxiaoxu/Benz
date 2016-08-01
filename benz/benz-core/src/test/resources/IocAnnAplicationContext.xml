@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/aop
+     http://www.springframework.org/schema/aop/spring-aop.xsd">
+  <bean id="eddie"
+      class="com.sxx.ioc.ann.bean.Instrumentalist">
+    <property name="instrument">
+      <bean class="com.sxx.ioc.ann.bean.Guitar" />
+    </property>
+  </bean>
+
+  <!--<start id="audience_bean" />--> 
+  <bean id="audience" 
+      class="com.sxx.ioc.ann.bean.Audience" />
+  <!--<end id="audience_bean" />-->
+
+<!--<start id="audience_aspect" />--> 
+<aop:config>
+  <aop:aspect ref="audience">
+    <aop:pointcut id="performance" expression=
+        "execution(* com.sxx.ioc.ann.bean.Performer.perform(..))" 
+        /> <!--<co id="co_defPointcut"/>-->
+        
+    <aop:before 
+        pointcut-ref="performance"
+        method="takeSeats" /> <!--<co id="co_refPointcut"/>-->
+    <aop:before 
+        pointcut-ref="performance"
+        method="turnOffCellPhones" /> <!--<co id="co_refPointcut"/>-->
+    <aop:after-returning
+        pointcut-ref="performance" 
+        method="applaud" /> <!--<co id="co_refPointcut"/>-->
+    <aop:after-throwing 
+        pointcut-ref="performance" 
+        method="demandRefund" /> <!--<co id="co_refPointcut"/>-->
+  </aop:aspect>
+</aop:config>
+<!--<end id="audience_aspect" />-->
+
+<bean id="persontest" class="com.sxx.ioc.ann.bean.Person"/>
+<aop:config>
+  <aop:aspect ref="audience">
+    <aop:pointcut id="person" expression=
+        "execution(* com.sxx.ioc.ann.bean.Person.sub(..))" 
+        /> <!--<co id="co_defPointcut"/>-->
+        
+    <aop:before 
+        pointcut-ref="person"
+        method="takeSeats" /> <!--<co id="co_refPointcut"/>-->
+    <aop:before 
+        pointcut-ref="person"
+        method="turnOffCellPhones" /> <!--<co id="co_refPointcut"/>-->
+    <aop:after-returning
+        pointcut-ref="person" 
+        method="applaud" /> <!--<co id="co_refPointcut"/>-->
+    <aop:after-throwing 
+        pointcut-ref="person" 
+        method="demandRefund" /> <!--<co id="co_refPointcut"/>-->
+  </aop:aspect>
+</aop:config>
+<bean id="persontest1" class="com.sxx.ioc.ann.bean.PersonT"/>
+
+<bean id="aroundAudience" class="com.sxx.ioc.ann.bean.AroundAudience" />
+
+<aop:config>
+  <aop:aspect ref="aroundAudience">
+    <aop:pointcut id="performance2" expression=
+        "execution(* com.sxx.ioc.ann.bean.PersonT.sub(..))" 
+        />
+        
+    <aop:around 
+        pointcut-ref="performance2"
+        method="watchPerformance()" /> <!--<co id="co_around"/>-->
+  </aop:aspect>
+</aop:config>
+</beans>

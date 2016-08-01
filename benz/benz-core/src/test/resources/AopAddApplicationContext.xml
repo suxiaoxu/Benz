@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans 
+     http://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/aop
+     http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+  <bean id="eddie"
+      class="com.sxx.aop.add.bean.Instrumentalist">
+    <property name="instrument">
+      <bean class="com.sxx.aop.add.bean.Guitar" />
+    </property>
+  </bean>
+
+  <aop:config>
+	<aop:aspect>
+  		<aop:declare-parents 
+  			types-matching="com.sxx.aop.add.bean.Performer+" 
+  			implement-interface="com.sxx.aop.add.bean.Contestant"
+   			default-impl="com.sxx.aop.add.bean.GraciousContestant"
+  		/>
+	</aop:aspect>
+  </aop:config>
+
+</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean>
+		<name>zhangsan1</name>
+		<age>12</age>
+	</bean>
+	<bean>
+		<name>zhangsan2</name>
+		<age>13</age>
+	</bean>
+	<bean>
+		<name>zhangsan3</name>
+		<age>14</age>
+	</bean>
+</beans>
