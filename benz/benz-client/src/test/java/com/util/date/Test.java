@@ -12,7 +12,7 @@ public class Test {
 			sn.print(2);
 			System.out.println("testa22");
 			System.out.println("testa12");
-			System.out.println("ceshi wenti");
+			System.out.println("ceshi weenti");
 			System.out.println("ceshi wenti");
 		}
 		
