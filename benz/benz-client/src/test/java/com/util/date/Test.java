@@ -11,6 +11,8 @@ public class Test {
 			Sn sn = new Sn();
 			sn.print(2);
 			System.out.println("testa22");
+			System.out.println("testa");
+			System.out.println("ceshi wenti");
 		}
 		
 	}
