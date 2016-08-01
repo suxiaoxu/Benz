@@ -10,6 +10,7 @@ public class Test {
 		while(true){
 			Sn sn = new Sn();
 			sn.print(2);
+			System.out.println("test");
 		}
 		
 	}
