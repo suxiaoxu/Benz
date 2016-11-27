@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
 
 import com.baobaotao.domain.User;
+import com.baobaotao.domain.UserT;
 
 @Repository
 public class UserDao {

@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 
 
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.baobaotao.domain.User;
+import com.baobaotao.domain.UserT;
 import com.baobaotao.service.UserService;
 @Controller
 public class LoginController{
@@ -34,7 +36,7 @@ public class LoginController{
 		logger.error("log ==========");
 		
 		if (!isValidUser) {
-			return new ModelAndView("login", "error", "用户名或密码错误�?");
+			return new ModelAndView("login", "error", "用户名或密码错误�?");
 		} else {
 			User user = userService.findUserByUserName(loginCommand
 					.getUserName());

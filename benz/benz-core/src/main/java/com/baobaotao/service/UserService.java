@@ -7,6 +7,7 @@ import com.baobaotao.dao.LoginLogDao;
 import com.baobaotao.dao.UserDao;
 import com.baobaotao.domain.LoginLog;
 import com.baobaotao.domain.User;
+import com.baobaotao.domain.UserT;
 
 @Service
 public class UserService {
