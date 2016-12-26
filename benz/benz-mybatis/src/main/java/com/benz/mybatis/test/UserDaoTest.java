@@ -29,6 +29,7 @@ public class UserDaoTest {
 		User sear = new User();
 		sear.setUserId(1);
 		User user = userDao.getUser(sear);
+		System.out.println(user.getUserId());
 	}
 	
 
