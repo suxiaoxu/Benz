@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.taobao.tddl:tddl-config-diamond:5.1.24-2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/tddl/tddl-config-diamond/5.1.24-2/tddl-config-diamond-5.1.24-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/tddl/tddl-config-diamond/5.1.24-2/tddl-config-diamond-5.1.24-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/tddl/tddl-config-diamond/5.1.24-2/tddl-config-diamond-5.1.24-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

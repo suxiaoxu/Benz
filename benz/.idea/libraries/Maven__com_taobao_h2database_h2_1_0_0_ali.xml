@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.taobao.h2database:h2:1.0.0.ali">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/h2database/h2/1.0.0.ali/h2-1.0.0.ali.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/h2database/h2/1.0.0.ali/h2-1.0.0.ali-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/h2database/h2/1.0.0.ali/h2-1.0.0.ali-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

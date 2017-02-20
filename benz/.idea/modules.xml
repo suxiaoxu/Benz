@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/benz.iml" filepath="$PROJECT_DIR$/benz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benz-client/benz-client.iml" filepath="$PROJECT_DIR$/benz-client/benz-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benz-common/benz-common.iml" filepath="$PROJECT_DIR$/benz-common/benz-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benz-core/benz-core.iml" filepath="$PROJECT_DIR$/benz-core/benz-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benz-mybatis/benz-mybatis.iml" filepath="$PROJECT_DIR$/benz-mybatis/benz-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benz-service/benz-service.iml" filepath="$PROJECT_DIR$/benz-service/benz-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benz-web/benz-web.iml" filepath="$PROJECT_DIR$/benz-web/benz-web.iml" />
+    </modules>
+  </component>
+</project>

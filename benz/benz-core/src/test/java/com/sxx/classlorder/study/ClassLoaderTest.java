@@ -38,7 +38,8 @@ public class ClassLoaderTest {
 			e.printStackTrace();
 		} 
         try {
-			setSampleMethod.invoke(an, an1);
+			//setSampleMethod.invoke(an, an1);
+        	setSampleMethod.invoke(an, null);
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
