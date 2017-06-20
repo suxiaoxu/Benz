@@ -2,6 +2,9 @@ package com.baobaotao.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 日志格式
+ */
 public class LoginLog implements Serializable{
 	private int loginLogId;
 
